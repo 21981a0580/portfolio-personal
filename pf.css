@@ -1,0 +1,468 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+    /*===== Colores =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    /*===== Fuente y tipografia =====*/
+    --body-font: "Poppins", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+    /*===== Margenes =====*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    /*===== z index =====*/
+    --z-back: -10;
+    --z-fixed: 100;
+  }
+  @media screen and (min-width: 968px) {
+    :root {
+      --big-font-size: 3.5rem;
+      --h2-font-size: 2rem;
+      --normal-font-size: 1rem;
+      --smaller-font-size: .875rem;
+    }
+  }
+  
+  /*===== BASE =====*/
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  background-image: url();
+
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+  #navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+  }
+  #navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+  }
+  #navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+  }
+  #navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+  }
+  #navItem5 {
+    color: #323f4b;
+    font-family: "Roboto";
+  }
+
+  .home {
+    display: flex;
+    align-items: center;
+}
+
+.home__data {
+    flex: 1;
+    padding-right: 20px; /* Adjust as needed */
+}
+
+.home__title {
+    font-size: 2.5rem; /* Adjust as needed */
+}
+.home__title-color{
+    color:deepskyblue;
+    font-weight: 800;
+
+}
+
+.home__bio {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.button {
+    padding-top: 20px;
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+}
+.social-links{
+    margin-top: 20px;
+    align-items: center;
+   font-size:large;
+   margin-left: 20px;
+   color: #fff;
+}
+.home__img {
+    margin-top: 20px;
+    flex: 1;
+    text-align: center; /* Center the image horizontally */
+    overflow: hidden; /* Ensure the overflow is hidden */
+    
+}
+
+.intro-image {
+    height:400px;
+    box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.5);
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    transition: transform 0.3s ease; /* Define the transition */
+    border-radius: 20px;
+
+
+}
+
+
+/* Define the animation */
+.animate {
+    transform: scale(1.2); /* Scale the image */
+
+}
+
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home__data {
+        padding-right: 0; /* Remove padding */
+        text-align: center; /* Center text */
+    }
+
+    .home__img {
+        margin-top: 20px; /* Add space between image and bio on small devices */
+    }
+}
+
+
+/*BUTTONS*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ===== SKILLS =====*/
+.skills{
+  background-color: rgb(155, 235, 193);
+}
+.wcu-section {
+  background-color: #f9fbfe;
+}
+.wcu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background-color: cornflowerblue;
+}
+.wcu-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.wcu-card {
+  text-align: center;
+  background-color:aqua;
+  border-radius: 10px;
+  box-shadow:aqua;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+  transition: transform 0.3s ease-in-out;
+
+}
+.wcu-card:hover {
+  transform: scale(1.05);
+}
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card.animate {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.wcu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 700;
+}
+.parent_image{
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color:aqua;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.html_image{
+  height:30px;
+  width:30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/*projects*/
+/* ===== WORK =====*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Custom styles */
+.wcu-section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.wcu-section-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.wcu-card1 {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wcu-card1 img {
+    width: 100%;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 30px 20px rgba(145, 241, 85, 0.5);
+
+}
+
+.wcu-card1 img:hover {
+    transform: scale(1.05);
+}
+
+.project_heading {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project_para {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+/* Basic styles */
+
+.contact {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.wcu-card4 {
+  background-color:#007bff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.wcu-card4 h2 {
+  text-align: center;
+  color: #333;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form div {
+  margin-bottom: 15px;
+}
+
+#contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+#contact-form input:nth-child(1),
+#contact-form textarea:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+#contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color:blueviolet;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 0.4s;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}
+
+#success-message {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.thankyou {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.thankyou p {
+  margin: 5px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.education{
+  background-color:aliceblue;
+}
+.wcu-card6{
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+.footer__title {
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+}
+.footer__social {
+  margin-bottom: var(--mb-4);
+}
+.footer__icon {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 var(--mb-2);
+}
+.footer__copy {
+  font-size: var(--smaller-font-size);
+}
