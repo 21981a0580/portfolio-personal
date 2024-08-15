@@ -18,36 +18,96 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="pf.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     </head>
-      <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="data:image/png;base64,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">
-              Siva
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ml-auto">
-                
-                <a class="nav-link ml-5" href="#home" id="navItem2"><b>About</b></a>
-                <a class="nav-link ml-5" href="#skills" id="navItem3"><b>Skills</b></a>
-                <a class="nav-link ml-5" href="#projects" id="navItem4"><b>Projects</b></a>
-                <a class="nav-link ml-5" href="#Education" id="navItem4"><b>Education</b></a>
+    <style>
+    body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
 
-                <a class="nav-link ml-5" href="#contact" id="navItem4"><b>Contact</b></a>
-              </div>
-            </div>
-          </div>
-        </nav>
-       <!--/* home Section*/-->
+    .topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
 
-       <section class="home bd-grid mt-5" id="home">
-        <div class="home__img">
-            <img src="https://res.cloudinary.com/dr2nf4d44/image/upload/c_crop,w_600,h_800,ar_3:4/v1715943523/profile_tmxk9w.jpg" alt="Siva's Photo" class="intro-image" id="animateImage">
+    .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    }
+
+    .topnav .icon {
+    display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    }
+    </style>
+    </head>
+    <body>
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active nav-link ml-5 nav-link mr-5">Siva</a>
+
+                    <a class="nav-link ml-5 nav-link mr-5" href="#home"><b>About</b></a>
+                    <a class="nav-link ml-5 nav-link mr-5" href="#skills"><b>Skills</b></a>
+                    <a class="nav-link ml-5 nav-link mr-5" href="#projects"><b>Projects</b></a>
+                    <a class="nav-link ml-5 nav-link mr-5" href="#Education"><b>Education</b></a>
+                    <a class="nav-link ml-5" href="#contact"><b>Contact</b></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </div>
+
+                <script>
+                function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+                }
+                </script>
+
+        <section class="home bd-grid mt-5" id="home">
+            <div class="home__img">
+                <img src="https://res.cloudinary.com/dr2nf4d44/image/upload/c_crop,w_600,h_800,ar_3:4/v1715943523/profile_tmxk9w.jpg" alt="Siva's Photo" class="intro-image" id="animateImage">
         </div>
         <div class="home__data mt-5">
             <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Siva</span><br> <b>FullStack Developer</b></h1>
